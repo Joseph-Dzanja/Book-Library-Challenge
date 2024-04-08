@@ -1,0 +1,77 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+    color: whitesmoke;
+    background-color: black;
+}
+
+button{
+    cursor: pointer;
+}
+
+input{
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+    padding: 2px;
+    padding-left: 5px;
+}
+
+.form_container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none; 
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    border: white 2px solid;
+    border-radius: 5px;
+    color: white;
+    padding: 1em 2em;
+}
+
+.formButtons{
+    margin-top: 1em;
+}
+
+.section_content{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 3em;
+}
+
+.book_library{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 2em;
+}
+
+.card{
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 1em;
+    box-shadow: 0 0 8px;
+    margin-right: 1em;
+    min-width: 200px;
+    margin-top: 2em;
+}
+
+.card:hover{
+    box-shadow: 0 0 10px;
+}
+
+
+@media (max-width: 660px){
+    .card{
+        width: 100%;
+    }
+}

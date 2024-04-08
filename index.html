@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form_container">
+        <form class="form_style" id="myForm">
+            <label for="book_title">Book Name</label>
+            <input type="text" id="book_title" placeholder="book title" required>
+            <label for="author">Author</label>
+            <input type="text" id="author" placeholder="author" required>
+            <label for="pages">Pages</label>
+            <input type="number" id="pages" placeholder="pages" required>
+            <h4>Reading Status</h4>
+            <div>
+                <label for="haveReadYes">Have Read</label>
+                <input type="radio" id="haveReadYes" name="haveRead" value="Yes" checked>
+                <label for="haveReadNo">Have not Read</label>
+                <input type="radio" id="haveReadNo" name="haveRead" value="No">
+            </div>
+            <div class="formButtons">
+                <button id="add_btn" type="button">Add Book</button>
+                <button id="cancel_btn" type="button">cancel</button>
+            </div>
+        </form>
+    </div>
+    <div class="section">
+        <div class="section_content">
+            <h1>Wacky Layout Library</h1>
+            <button id="newBook_btn" type="button">New Book</button>
+            <div class="book_library">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
